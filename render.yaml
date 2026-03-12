@@ -1,0 +1,26 @@
+# Supply Chain Sentinel - Showcase Version
+# SHOWCASE NOTE: Render configuration shown for reference.
+# This demonstrates deployment patterns but execution is limited.
+
+services:
+  - type: web
+    name: supply-chain-sentinel-showcase
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run dashboard.py --server.port=$PORT --server.address=0.0.0.0
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: LANGSMITH_API_KEY
+        sync: false
+      - key: LANGSMITH_PROJECT
+        value: supply-chain-sentinel
+      - key: LANGSMITH_TRACING
+        value: "true"
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+    healthCheckPath: /
+    dockerfilePath: ./Dockerfile
+
+# SHOWCASE: This configuration is shown for reference.
+# In the full version, this deploys a working application.
