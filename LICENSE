@@ -19,6 +19,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+<<<<<<< HEAD
 
 ---
 
@@ -33,3 +34,5 @@ complete executable functionality.
 For access to the full working version, please contact:
 - GitHub: https://github.com/Christador8
 - Repository: https://github.com/Christador8/supply-chain-sentinel
+=======
+>>>>>>> 79f860a637a0bde75c4f90a7b0feec15c6cbe02b
